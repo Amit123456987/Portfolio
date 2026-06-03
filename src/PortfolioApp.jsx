@@ -36,6 +36,61 @@ const projects = [
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
     description:
       "Built real-time MDM with WebSocket/WSS channels for remote device control, end-to-end encryption, and secure authentication."
+  },
+  {
+    title: "Trade Data API & Webhook Platform",
+    company: "Eximpedia Pte. Ltd.",
+    tag: "API Platform",
+    tags: ["REST", "Webhooks", "WebSocket", "TypeScript"],
+    metric: "100+ endpoints",
+    image:
+      "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "Shipped RESTful APIs, webhook delivery, and WebSocket channels for trade-data integrations and real-time client notifications at scale."
+  },
+  {
+    title: "Hyperlocal Delivery SaaS Backend",
+    company: "JungleWorks",
+    tag: "SaaS Backend",
+    tags: ["Express.js", "PostgreSQL", "Redis", "Node.js"],
+    metric: "Sub-100ms cache hits",
+    image:
+      "https://images.unsplash.com/photo-1526378786782-6d92d1f6d38b?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "Built Express.js APIs and PostgreSQL schemas with Redis caching for high-traffic delivery, dispatch, and logistics workflows."
+  },
+  {
+    title: "ELK Observability Pipeline",
+    company: "JungleWorks",
+    tag: "DevOps & Monitoring",
+    tags: ["ELK Stack", "Kibana", "Logging", "APIs"],
+    metric: "Full-stack visibility",
+    image:
+      "https://images.unsplash.com/photo-1504639725590-34d0984388bd?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "Centralized application logging with ELK Stack and Kibana dashboards — faster incident triage and API health monitoring across services."
+  },
+  {
+    title: "React Dashboard Performance Overhaul",
+    company: "JungleWorks",
+    tag: "Frontend Engineering",
+    tags: ["React.js", "Redux", "Memoization", "Profiling"],
+    metric: "Faster render cycles",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "Profiled and optimized React dashboards with memoization, selective re-renders, and Redux refinements for smoother UX under load."
+  },
+  {
+    title: "Serverless Azure Functions Pipeline",
+    company: "Eximpedia Pte. Ltd.",
+    tag: "Serverless",
+    tags: ["Azure Functions", "TypeScript", "Event-driven", "Cloud"],
+    metric: "25% latency reduction",
+    image:
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "Converted legacy services to TypeScript Azure Functions with event-driven triggers — cutting response times while reducing ops overhead."
   }
 ];
 
@@ -86,28 +141,70 @@ const education = {
 
 const services = [
   {
-    title: "Backend Development",
+    title: "Backend & API Engineering",
     icon: "⚡",
+    tag: "Core Strength",
+    highlights: ["REST & Webhooks", "NestJS / Express", "JWT Auth"],
+    metric: "100+ APIs shipped",
     image:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&q=80",
     description:
-      "Production-grade Node.js APIs, authentication, payments, and scalable architecture for high-growth products."
+      "Production Node.js APIs, webhook pipelines, auth flows, and service architecture — the backbone behind OPMS and trade-data platforms."
   },
   {
-    title: "LLM + AI Integrations",
+    title: "Cloud & Microservices",
+    icon: "☁️",
+    tag: "Azure · AKS",
+    highlights: ["Kubernetes", "Azure Functions", "AWS Migration"],
+    metric: "25% latency reduction",
+    image:
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "Scalable microservices on Azure AKS, serverless Azure Functions, and smooth cloud migrations from legacy AWS deployments."
+  },
+  {
+    title: "Real-time Systems",
+    icon: "📡",
+    tag: "WebSocket · WSS",
+    highlights: ["Live dashboards", "Device control", "E2E encryption"],
+    metric: "Sub-second updates",
+    image:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "WebSocket and WSS channels for MDM, live notifications, and secure real-time client-server communication at scale."
+  },
+  {
+    title: "Database & Performance",
+    icon: "🚀",
+    tag: "PostgreSQL · Redis",
+    highlights: ["Query tuning", "Redis caching", "EXPLAIN ANALYZE"],
+    metric: "40–80% faster queries",
+    image:
+      "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "PostgreSQL schema design, SQL optimization, and Redis caching layers that keep high-traffic SaaS backends fast under load."
+  },
+  {
+    title: "React & Frontend Engineering",
+    icon: "⚛️",
+    tag: "UI Performance",
+    highlights: ["React.js", "Redux", "Memoization"],
+    metric: "Smoother UX at scale",
+    image:
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "React dashboards and admin panels with profiling, memoization, and Redux refinements for responsive enterprise UIs."
+  },
+  {
+    title: "LLM & AI Integrations",
     icon: "🤖",
+    tag: "Freelance Ready",
+    highlights: ["RAG pipelines", "AI assistants", "Workflow automation"],
+    metric: "Ship AI features fast",
     image:
       "https://images.unsplash.com/photo-1676299081847-824916de030a?auto=format&fit=crop&w=1200&q=80",
     description:
-      "RAG pipelines, AI assistants, and workflow automation wired directly into your existing stack."
-  },
-  {
-    title: "Performance & Reliability",
-    icon: "🚀",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80",
-    description:
-      "Caching, queues, monitoring, and microservices-ready infrastructure that keeps your product fast under load."
+      "RAG pipelines, AI assistants, and workflow automation wired into your existing Node.js stack — from prototype to production."
   }
 ];
 
@@ -339,24 +436,35 @@ function HomePage() {
         </Reveal>
       </section>
 
-      <section className="container section" id="services">
+      <section className="container section services-section" id="services">
         <Reveal>
           <SectionLabel>Services</SectionLabel>
           <h2>What I deliver for clients</h2>
           <p className="section-text">
-            End-to-end engineering — from architecture to deployment.
+            Proven capabilities from Wellwiz, Eximpedia, and JungleWorks — backend, cloud, real-time
+            systems, and AI integrations for production-grade products.
           </p>
         </Reveal>
-        <div className="service-grid">
+        <div className="services-grid">
           {services.map((service, i) => (
-            <Reveal key={service.title} delay={i * 100}>
-              <article className="card service-card">
-                <div className="card-image-wrap">
-                  <img className="card-visual service-visual" src={service.image} alt={service.title} />
-                  <span className="card-icon">{service.icon}</span>
+            <Reveal key={service.title} delay={i * 90}>
+              <article className="service-card">
+                <div className="service-card-media">
+                  <img src={service.image} alt={service.title} />
+                  <div className="service-card-overlay" aria-hidden="true" />
+                  <span className="service-icon">{service.icon}</span>
+                  <span className="service-badge">{service.tag}</span>
                 </div>
-                <h3>{service.title}</h3>
-                <p>{service.description}</p>
+                <div className="service-card-body">
+                  <h3>{service.title}</h3>
+                  <p>{service.description}</p>
+                  <span className="service-metric">{service.metric}</span>
+                  <div className="service-tags">
+                    {service.highlights.map((item) => (
+                      <span key={item}>{item}</span>
+                    ))}
+                  </div>
+                </div>
               </article>
             </Reveal>
           ))}
