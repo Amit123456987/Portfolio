@@ -1,7 +1,16 @@
 import { useEffect, useState } from "react";
 import { Link, Route, Routes, useLocation } from "react-router-dom";
 import Reveal from "./components/Reveal";
+import TypingText from "./components/TypingText";
 import "./App.css";
+
+const aboutTypingPhrases = [
+  "REST APIs & Webhooks",
+  "NestJS Microservices",
+  "Azure AKS & Cloud",
+  "Real-time WebSockets",
+  "LLM & AI Integrations"
+];
 
 const projects = [
   {
@@ -366,10 +375,14 @@ function HomePage() {
         </div>
       </section>
 
-      <section id="about" className="container section">
+      <section id="about" className="container section about-section">
         <Reveal>
           <SectionLabel>About Me</SectionLabel>
           <h2>Full Stack Engineer with deep backend expertise</h2>
+          <p className="about-typewriter" aria-label={`I specialize in ${aboutTypingPhrases.join(", ")}`}>
+            <span className="about-typewriter-prefix">I specialize in </span>
+            <TypingText phrases={aboutTypingPhrases} className="about-typewriter-roles" />
+          </p>
           <p className="section-text">
             I'm a Software Engineer (Full Stack Developer) based in Delhi, India, with a B.Tech in CSE from
             IIIT Delhi. Over 3+ years I've shipped production systems across Wellwiz, Eximpedia, and JungleWorks —

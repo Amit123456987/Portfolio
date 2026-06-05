@@ -312,6 +312,58 @@ h3 {
   margin: 0;
 }
 
+/* ── About typing ── */
+.about-section h2 {
+  margin-bottom: 0.75rem;
+}
+
+.about-typewriter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.15rem;
+  min-height: 2rem;
+  margin: 0 0 1.25rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+  max-width: 52ch;
+}
+
+.about-typewriter-prefix {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.about-typewriter-roles {
+  display: inline-flex;
+  align-items: baseline;
+  min-width: 16ch;
+}
+
+.typing-text-value {
+  background: linear-gradient(135deg, #a8c0ff, var(--accent), #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.typing-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  margin-left: 3px;
+  vertical-align: text-bottom;
+  background: var(--accent);
+  border-radius: 1px;
+  animation: typing-blink 1s step-end infinite;
+}
+
+@keyframes typing-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
 .hero-metrics {
   margin-top: 1.5rem;
   display: grid;
@@ -1715,5 +1767,10 @@ h3 {
   .reveal {
     opacity: 1;
     transform: none !important;
+  }
+
+  .typing-cursor {
+    animation: none;
+    opacity: 1;
   }
 }
